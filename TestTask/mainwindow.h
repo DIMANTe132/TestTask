@@ -23,6 +23,8 @@ private slots:
 
     void on_choose_color_released(); // Set the color of the cylinder
 
+    void on_reverse_rotate_clicked(bool checked);
+
 private:
     Ui::MainWindow *ui;
 };

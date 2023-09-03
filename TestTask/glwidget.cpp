@@ -49,11 +49,11 @@ void GLWidget::paintGL()
 
     // Set the rotation of the cylinder
     if(currentRotationAxis == RotationAxis::X)
-        glRotatef(0.5, 1, 0, 0);
+        reverseRotate ? glRotatef(-0.5, 1, 0, 0) : glRotatef(0.5, 1, 0, 0);
     else if(currentRotationAxis == RotationAxis::Y)
-        glRotatef(0.5, 0, 1, 0);
+        reverseRotate ? glRotatef(-0.5, 0, 1, 0) : glRotatef(0.5, 0, 1, 0);
     else if(currentRotationAxis == RotationAxis::Z)
-        glRotatef(0.5, 0, 0, 1);
+        reverseRotate ? glRotatef(-0.5, 0, 0, 1) : glRotatef(0.5, 0, 0, 1);
 }
 
 void GLWidget::resizeGL(int w, int h)

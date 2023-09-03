@@ -25,6 +25,7 @@ public:
 
     int vertexCount; // Number of vertices
     RotationAxis currentRotationAxis; // Current axis of rotation
+    bool reverseRotate; // Direction of rotation
     QColor color; // Cylinder color
 
 private:

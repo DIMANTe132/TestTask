@@ -62,6 +62,13 @@
          </widget>
         </item>
         <item>
+         <widget class="QCheckBox" name="reverse_rotate">
+          <property name="text">
+           <string>Вращение в обратную сторону</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QLabel" name="choose_color_label">
           <property name="text">
            <string>Выбор цвета цилиндра:</string>
